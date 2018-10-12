@@ -9,6 +9,7 @@
     @foreach($names as $man)
       <div>
         name  : {{$man['name'] }}  {{$man['family']}} <br>
+          this is
       </div>
 
     @endforeach
