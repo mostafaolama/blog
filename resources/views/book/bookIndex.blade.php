@@ -1,3 +1,4 @@
+@extends ('bootstrap')
 <h1>
     List of Books
 </h1>

@@ -11,13 +11,13 @@ class BookController extends Controller
     function index(){
         $books = book::all();
         //dd($books);
-        return view('bookIndex', compact('books'));
+        return view('book.bookIndex', compact('books'));
     }
 
     //show book information in order to id
     function show($id){
         $book = book::findOrFail($id);
-        return view('bookInfo', compact('book'));
+        return view('book.bookInfo', compact('book'));
     }
     /*
 

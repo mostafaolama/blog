@@ -17,16 +17,16 @@ Route::get('/', function () {
 //test for bootstrap
 Route::get('/bootstrap', function(){
     return view('bootstrap');
-
 });
 
 //routing book request
-Route::get('/booklist', 'bookController@bookList');
-Route::get('/booklist/{id}', 'bookController@showBookInfo');
+Route::get('/booklist', 'bookController@index');
+Route::get('/booklist/{id}', 'bookController@show');
 
 
 //routing phone product request
 Route::get('products', 'phoneController@index');
+Route::get('/products/creat', 'phoneContoller@creat');
 Route::get('/products/{id}',  'phoneController@show');
 
 

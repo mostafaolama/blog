@@ -12,12 +12,12 @@ class phoneController extends Controller
         //$products = DB::table('products')
           //  ->orderBy('name','asc')
             //->get();
-        $products = phone::all();
-        return view('products_view', compact('products'));
+        $phones = phone::all();
+        return view('phone_list_view', compact('phones'));
     }
 
     function show($id){
-        $product = phone::findOrFail($id);
-            return view ('product_view', compact('product'));
+        $phone = phone::findOrFail($id);
+            return view ('phone_view', compact('phone'));
     }
 }
