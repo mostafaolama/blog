@@ -23,4 +23,9 @@ class BookController extends Controller
     function creat(){
         return view('book.creat');
     }
+
+    function save(Request $request){
+        dd($request->all());
+        dd("new mail");
+    }
 }

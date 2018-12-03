@@ -10,5 +10,5 @@ class phone extends Model
     //this model is using for phone product i named it this way.
    protected $table = 'products';   //set the table for Model.
 
-   protected $fillable = ['name', 'description'];
+   protected $fillable = ['name', 'description', 'brand', 'price'];
 }

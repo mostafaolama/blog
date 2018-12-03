@@ -23,11 +23,15 @@ Route::get('/bootstrap', function(){
 Route::get('/booklist', 'bookController@index');
 Route::get('/booklist/{id}', 'bookController@show');
 Route::get('/creat', 'bookController@creat');
-
+Route::post('/save', 'bookController@save');
 //routing phone product request
 Route::get('products', 'phoneController@index');
 Route::get('/products/creat', 'phoneController@creat');
+Route::post("/products",      "phoneController@save");
 Route::get('/products/{id}',  'phoneController@show');
+Route::get("editPhonePage","phoneController@edit");
+Route::post('edit', 'phoneController@makeEdit');
+
 //Route::get('')
 
 Route::get('/users', function (){

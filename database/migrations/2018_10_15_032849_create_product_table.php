@@ -20,7 +20,7 @@ class CreateProductTable extends Migration
             $table->text('brand');
             $table->float('price');
             $table->date('created_at');
-            $table->date('update_at');
+            $table->date('updated_at');
 
 
         });

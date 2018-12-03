@@ -1,13 +1,16 @@
-
-@extends ('bootstrap')
+@extends("bootstrap")
 
 @section('title')
-    <div> Insert new phone! </div>
+<div> Edit phone! </div>
 @endsection
 @section('content')
 
-    <form method="post" action="/products">
+    <form method="post" action="/edit">
         {{csrf_field() }}
+        <div class="form-group">
+            <label for="phoneName">id</label>
+            <input type="number" name="id" class="form-control" id="phoneId ">
+        </div>
         <div class="form-group">
             <label for="phoneName">name</label>
             <input type="text" name="name" class="form-control" id="phoneName ">

@@ -9,6 +9,13 @@
         {{$phone->description}}
     </p>
 
+    <p>
+        Brand: {{$phone->brand}}
+    </p>
+    <p>
+       Price: {{$phone->price}}$
+    </p>
+
 </div>
 
 @endsection
