@@ -22,13 +22,13 @@ Route::get('/bootstrap', function(){
 //routing book request
 Route::get('/booklist', 'bookController@index');
 Route::get('/booklist/{id}', 'bookController@show');
-
+Route::get('/creat', 'bookController@creat');
 
 //routing phone product request
 Route::get('products', 'phoneController@index');
-Route::get('/products/creat', 'phoneContoller@creat');
+Route::get('/products/creat', 'phoneController@creat');
 Route::get('/products/{id}',  'phoneController@show');
-
+//Route::get('')
 
 Route::get('/users', function (){
     $users = DB::table('users')->select('name')->get();

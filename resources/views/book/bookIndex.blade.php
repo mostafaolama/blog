@@ -1,7 +1,9 @@
 @extends ('bootstrap')
+@section('content')
 <h1>
     List of Books
 </h1>
+
 <div>
     @foreach($books as $book)
     <div>
@@ -11,3 +13,4 @@
     </div>
     @endforeach
 </div>
+@endsection

@@ -17,6 +17,8 @@ class CreateProductTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description');
+            $table->text('brand');
+            $table->float('price');
             $table->date('created_at');
             $table->date('update_at');
 

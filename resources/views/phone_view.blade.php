@@ -8,7 +8,7 @@
     <p>
         {{$phone->description}}
     </p>
-@endsection('content')
+
 </div>
 
-
+@endsection

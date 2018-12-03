@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="../../../../favicon.ico">
         <!-- Bootstrap Template for layout -->
-        <title> @yield('title') </title>
+
 
 
         <!-- Bootstrap core CSS -->
@@ -53,12 +53,11 @@
             </form>
         </div>
     </nav>
-        <main role="main" class="container">
+        <main role="main" class= "container">
 
             <div class="card">
-                <div class="card-title"> <h5>Products</h5> </div>
+                <div class="card-title"> <h5>@yield('title')</h5> </div>
                 <div class="card-body">
-                    this is the card body
                     <div >@yield('content')</div>
                 </div>
             </div>

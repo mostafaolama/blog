@@ -15,7 +15,14 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->string('name',100);
+            $table->string('author',100);
+            $table->integer('page');
+            $table->text('summary');
+            $table->date('Published at');
+            $table->index(['name','author','page'],'bookUniqueId');
+
+
         });
     }
 

@@ -19,6 +19,7 @@ class CreateBooksTable extends Migration
             $table->string('author',100);
             $table->integer('page');
             $table->text('summary');
+            $table->float('price');
             $table->date('Published at');
             $table->index(['name','author','page'],'bookUniqueId');
 

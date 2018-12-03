@@ -19,10 +19,8 @@ class BookController extends Controller
         $book = book::findOrFail($id);
         return view('book.bookInfo', compact('book'));
     }
-    /*
 
-
-
-
-    */
+    function creat(){
+        return view('book.creat');
+    }
 }

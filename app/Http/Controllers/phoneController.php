@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\phone;
 use Illuminate\Http\Request;
-//use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\DB;
 class phoneController extends Controller
 {
@@ -19,5 +19,9 @@ class phoneController extends Controller
     function show($id){
         $phone = phone::findOrFail($id);
             return view ('phone_view', compact('phone'));
+    }
+
+    function creat(){
+        return view('insert_new_phone');
     }
 }

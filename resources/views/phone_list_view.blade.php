@@ -8,9 +8,10 @@
 
 <div>
     @section('content')
-    @foreach ($phones as $product)
-        <a href=" products/{{$product->id}}" >{{$product->name}}</a><br>
+        @foreach ($phones as $product)
+            <a href=" products/{{$product->id}}" >{{$product->name}}</a><br>
 
-    @endforeach
+        @endforeach
+    @endsection()
+
 </div>
-@endsection()
