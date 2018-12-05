@@ -35,6 +35,13 @@
             <input type="number" name="price" class="form-control" id="price" placeholder="Enter phone price in daller">
         </div>
 
+        <div>
+        @if($errors->any())
+            @foreach($errors as $error)
+               <p>{{$error}}</p>
+            @endforeach
+        @endif
+        </div>
         <button type="submit" class="btn btn-primary">Save</button>
     </form>
 @endsection

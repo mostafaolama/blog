@@ -26,7 +26,14 @@ class phoneController extends Controller
     }
 
 
-        public function save (Request $request){
+        public function save (Request $request){ //validation form input data
+            $dataValidation = $request->validate([
+                'name' => 'required' ,
+                'price' => 'numeric | required',
+                'brand' => 'required',
+                'description '=> 'required'
+            ]);
+            dd($dataValidation);
             $input = phone::create($request->except('token'));
             $phones = phone::all();
             return view ('phone_list_view', compact("phones"));
